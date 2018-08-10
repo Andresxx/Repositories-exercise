@@ -1,0 +1,43 @@
+#tabs li{
+    display: inline-block;
+    padding: 1.5em;
+    cursor: pointer;
+    color: bisque;
+    
+
+}
+
+ul{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+li:hover{
+    background-color: rgb(36, 96, 151); 
+}
+
+#navbar{
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+.selected{
+    background-color:rgb(36, 96, 151); 
+    
+}
+
+#titulo{
+    text-align: center;   
+    margin: 0;
+}
+h1{
+    font-family: Courier;
+}
+body {
+    
+    background-image: url("https://img.webme.com/pic/w/webcp/bge01.jpg");
+    background-repeat: no-repeat;
+    background-size: auto; 
+}
