@@ -14,6 +14,9 @@ async function start(req, res) {
 }
 
 app.get("/",start);
+app.get("/repositories", function(req, res){
+    res.render("repos");
+});
 
 
 

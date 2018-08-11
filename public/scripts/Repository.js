@@ -1,13 +1,46 @@
-class Repository{
-    constructor(data,container){
-        this.info=data;
-        this.container=container;
+class Repository {
+    constructor(data, container) {
+        this.info = data;
+        this.container = container;
         this.render();
     }
 
-    render(){
-        const img=document.createElement("img");
-        img.src=this.info.avatar_url;
-        this.container.appendChild(img);
+    render() {
+
+        const img = document.createElement("img");
+
+        if (this.info.avatar_url != "") {
+            img.src = this.info.avatar_url;
+        } else {
+            img.src = "perfil.jpg";
+        }
+        const name = document.createElement("p");
+        name.textContent = this.info.name;
+
+        const nick = document.createElement("p");
+        nick.textContent = this.info.nickName;
+
+
+
+        const url = document.createElement('a');
+        url.setAttribute('href', this.info.github_url);
+        var urlName = document.createTextNode(this.info.github_url);
+        url.appendChild(urlName);
+
+        const tarjeta = document.createElement("div");
+
+        tarjeta.appendChild(img);
+        tarjeta.appendChild(name);
+        tarjeta.appendChild(nick);
+        tarjeta.appendChild(url);
+        this.container.appendChild(tarjeta);
+
+        //    this.container.appendChild(img);
+        //    this.container.appendChild(name);
+        //    this.container.appendChild(nick);
+        //    this.container.appendChild(url);
+
+
+
     }
 }

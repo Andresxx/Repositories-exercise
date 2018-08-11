@@ -35,9 +35,39 @@ li:hover{
 h1{
     font-family: Courier;
 }
-body {
+html {
+
+    background: url("https://img.webme.com/pic/w/webcp/bge01.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#data-repositoties{
+    width: 30em;
+    height: 20em;
+    margin: auto;
     
-    background-image: url("https://img.webme.com/pic/w/webcp/bge01.jpg");
-    background-repeat: no-repeat;
-    background-size: auto; 
+
+     
+     
+    
+}
+
+#data-repositoties div{
+    width: 45em;
+    height: 15em;
+    margin: 1em -8em;
+    border: 1px solid black; 
+    border-radius: 25px;
+    display: inline-block;
+    background-color: rgba(197, 168, 168, 0.452);
+    
+  
+    
+}
+#data-repositoties img{
+    float:left; 
+    margin:10px
 }
