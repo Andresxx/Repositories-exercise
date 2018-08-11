@@ -31,9 +31,12 @@ li:hover{
 #titulo{
     text-align: center;   
     margin: 0;
+    padding-bottom: 3em;
 }
 h1{
     font-family: Courier;
+    font-size: 2.5em;
+
 }
 html {
 
@@ -48,11 +51,6 @@ html {
     width: 30em;
     height: 20em;
     margin: auto;
-    
-
-     
-     
-    
 }
 
 #data-repositoties div{
@@ -70,4 +68,33 @@ html {
 #data-repositoties img{
     float:left; 
     margin:10px
+}
+p,a{
+    font-size: 1.2em;
+}
+
+#pos1{
+    margin-top: 3em;
+    padding-top: 2em;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.301);
+   
+    color: rgb(224, 218, 218);
+}
+#link{
+    text-align: center;
+}
+
+#pos1 a:link, #pos1 a:visited {
+    background-color: #36a8f4;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+#pos1 a:hover, #pos1 a:active {
+    background-color: rgb(36, 96, 151);
 }

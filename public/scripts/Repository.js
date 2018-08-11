@@ -15,10 +15,10 @@ class Repository {
             img.src = "perfil.jpg";
         }
         const name = document.createElement("p");
-        name.textContent = this.info.name;
+        name.textContent = 'Name: '+this.info.name;
 
         const nick = document.createElement("p");
-        nick.textContent = this.info.nickName;
+        nick.textContent = 'Nickname: '+this.info.nickName;
 
 
 
@@ -35,10 +35,6 @@ class Repository {
         tarjeta.appendChild(url);
         this.container.appendChild(tarjeta);
 
-        //    this.container.appendChild(img);
-        //    this.container.appendChild(name);
-        //    this.container.appendChild(nick);
-        //    this.container.appendChild(url);
 
 
 
